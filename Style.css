@@ -1,0 +1,443 @@
+@font-face {
+    font-family: myfont;
+    src: url(./gendev/Comfortaa/Comfortaa-VariableFont_wght.ttf); 
+}
+
+
+*{
+    margin: 0;
+    font-family: myfont;
+
+}
+
+body{
+    background: #B284BE;
+    height: auto;
+    width: auto;
+}
+
+.en-tete{
+  width: auto;
+  position: sticky;
+}
+
+.en-tete i{
+    height: 40px;
+    width: 40px;
+}
+
+header{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow:  1px 1px 1pc 1px rgb(32, 31, 31);
+    text-decoration: none;
+    width: 100%;
+
+}
+
+.presentation{
+    height: 400px;
+    width: 100%;
+    align-content: center;
+    background-color: #B284BE;
+    position: relative;
+    top: 5rem;
+    padding-left: 50rem;
+    font-size: 23px;
+    color: aliceblue;
+}
+
+.na{
+    height: 15rem;
+    width: 15rem;
+    position: relative;
+    right: 51rem;
+    bottom: 175px;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.ba{
+    height: 10rem;
+    width: 11rem ;
+    position: relative;
+    bottom: 275px;
+    right: 40rem;
+    border-radius: 10px;
+
+}
+
+.nom{
+    bottom: 30px;
+}
+
+
+.vetement{
+    padding: 0;
+    width: 100%;
+}
+
+.vetement img{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #dbdbdb;
+    z-index: -1;
+}
+
+.t-shirt{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 800px;
+    box-sizing: border-box;
+    position: relative;
+    top: 110px;
+}
+
+
+.t-shirt .T{
+    width: 265px;
+    height: 350px;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow:0 30px 50px #505050 ;
+    background-position: 50% 50%;
+    background-size:cover ;
+    transition: 0.5s;
+    position: absolute;
+}
+
+
+.t-shirt .T:nth-child(3) figcaption{
+  display: block;
+}
+
+.t-shirt figcaption p{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.t-shirt figcaption a{
+    background-color: aliceblue;
+    color: #505050;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.t-shirt button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s
+     1 forwards;
+}
+
+.t-shirt .T:nth-child(3){
+  z-index: 9;
+}
+
+.t-shirt .T:nth-child(4){
+  z-index: 8;
+
+}
+
+.t-shirt .T:nth-child(5){
+    z-index: 7;
+}
+
+.t-shirt .T:nth-child(6){
+    opacity: 0;
+   z-index: 6;
+}
+
+
+
+.t-shirt .T:nth-child(7){
+    left: calc(50% + 1000px);
+    opacity: 0;
+    z-index: 5;
+}
+
+.t-shirt .T:nth-child(8){
+    opacity: 0;
+    z-index: 4;
+}
+
+
+.t-shirt figcaption{
+    text-align: left;
+    color: #eee;
+    transform: translate(0,10);
+    display: none;
+    z-index: 90;
+}
+
+ figcaption{
+    text-align: left;
+    color: #eee;
+    transform: translate(0,10);
+    display: none;
+    z-index: 90;
+    position: relative;
+    top: 3rem;
+}
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 1000px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+.button {
+    width: 100%;
+    text-align: center;
+
+}
+
+.button button {
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
+
+
+.pantalon{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 800px;
+    box-sizing: border-box;
+    position: relative;
+    top: 320px;
+}
+
+
+.pantalon .P{
+    width: 265px;
+    height: 350px;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow:0 30px 50px #505050 ;
+    background-position: 50% 50%;
+    background-size:cover ;
+    transition: 0.5s;
+    position: absolute;
+}
+
+
+.pantalon .P:nth-child(2) figcaption{
+  display: block;
+}
+
+.pantalon figcaption p{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.pantalon figcaption a{
+    background-color: aliceblue;
+    color: #505050;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.pantalon button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s
+     1 forwards;
+}
+
+.pantalon .P:nth-child(3){
+  z-index: 9;
+}
+
+.pantalon .P:nth-child(4){
+  z-index: 8;
+
+}
+
+.pantalon .P:nth-child(5){
+    z-index: 7;
+}
+
+.pantalon .P:nth-child(6){
+    opacity: 0;
+   z-index: 6;
+}
+
+
+
+.pantalon .P:nth-child(7){
+    left: calc(50% + 1000px);
+    opacity: 0;
+    z-index: 5;
+}
+
+.pantalon .P:nth-child(8){
+    opacity: 0;
+    z-index: 4;
+}
+
+.t-shirt .T:nth-child(9){
+ z-index: 3;
+ opacity: 0;
+}
+
+
+.shoes{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 210px;
+}
+
+
+.shoes{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 800px;
+    box-sizing: border-box;
+}
+
+
+
+.shoes .S{
+    width: 265px;
+    height: 350px;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow:0 30px 50px #505050 ;
+    background-position: 50% 50%;
+    background-size:cover ;
+    transition: 0.5s;
+    position: absolute;
+}
+
+
+
+.shoes .S:nth-child(11) figcaption{
+  display: block;
+}
+
+ figcaption p{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+figcaption a{
+    background-color: aliceblue;
+    color: #505050;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s
+     1 forwards;
+}
+
+.assecoir{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 8rem;
+
+}
+
+
+.assecoir{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 800px;
+    box-sizing: border-box;
+    position: relative;
+    top: 500px;
+
+}
+
+
+.assecoir .A{
+    width: 265px;
+    height: 350px;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow:0 30px 50px #505050 ;
+    background-position: 50% 50%;
+    background-size:cover ;
+    transition: 0.5s;
+    position: absolute;
+}
+
+
+.assecoir .A:nth-child(10) figcaption{
+  display: block;
+}
+
+
+@media (max-width:600px) {
+    body{
+        height: 100%;
+    }
+    .nom,
+    .aceiul,
+    .bienvenue{
+        display: none;
+    }
+
+    .t-shirt,
+    .pantalon,
+    .shoes,
+    .assecoir{
+        width: 100%;
+    }
+}
+
